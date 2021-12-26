@@ -121,5 +121,5 @@ install(EXPORT QtSystemdTargets DESTINATION
   "${INSTALL_CMAKE_DIR}" COMPONENT dev)
 
 message(STATUS "Writing pkg-config file...")
-configure_file(${CMAKE_SOURCE_DIR}/QtSystemd.pc.cmake ${CMAKE_BINARY_DIR}/QtSystemd.pc @ONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/QtSystemd.pc.cmake ${CMAKE_BINARY_DIR}/QtSystemd.pc @ONLY)
 install(FILES ${CMAKE_BINARY_DIR}/QtSystemd.pc DESTINATION "${INSTALL_LIB_DIR}/pkgconfig/")
