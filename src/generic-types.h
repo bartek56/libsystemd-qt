@@ -20,7 +20,7 @@
 #ifndef GENERIC_TYPES_H
 #define GENERIC_TYPES_H
 
-#include <QDBusArgument>
+#include <QtDBus/QDBusArgument>
 
 typedef struct {
     uint id;
